@@ -8,6 +8,8 @@ Plugins that give AI agents real phones through [Lusor](https://lusor.ai): your 
 
 The plugin follows the [Agent Plugins](https://agent-plugins.org) standard and carries the manifests Cursor, Factory Droid, Grok Build, Hermes Agent and Perplexity read. Install steps for each app are in the [plugin's README](plugins/lusor/README.md).
 
+The Cursor, Grok Build and Hermes catalog listings are in review. Until they are live, add Lusor by URL with the steps at [docs.lusor.ai/connect](https://docs.lusor.ai/connect).
+
 ## Factory Droid
 
 ```bash
