@@ -14,7 +14,9 @@ Ask in plain language, for example *"List my Lusor phones"* or *"On my phone, op
 | `get_screenshot`, `get_screen_state` | See the screen and its elements |
 | `phone_action` | Tap, type, swipe, press a button or open an app |
 | `install_app`, `list_app_installs` | Install apps from the Lusor app catalog on a Lusor Phone |
-| `add_phone`, `remove_phone`, `wipe_phone` | Buy, remove or wipe a Lusor Phone |
+| `remove_phone`, `wipe_phone` | Remove or wipe a Lusor Phone |
+
+With an API key instead of sign-in, the agent also gets `add_phone`, which buys Lusor Phones after you confirm a price quote, and two advanced tools, `search` and `execute`, that reach any Lusor API operation.
 
 ## Install
 
@@ -51,7 +53,7 @@ Apps that let you set request headers can send `Authorization: Bearer lusor_...`
 - The plugin contains configuration only: no code, scripts or hooks.
 - It connects to one endpoint, `https://mcp.lusor.ai/mcp` (Streamable HTTP, OAuth 2.1 with dynamic client registration and PKCE). Sign-in runs on `https://mcp.lusor.ai`.
 - Every tool call runs as the signed-in user, in their workspace. Tool results, including screenshots and screen text, enter your session and so reach your model provider.
-- **Costs and changes.** `run_task` uses credits, and phone minutes on a Lusor Phone. `add_phone` buys Lusor Phones on the workspace's plan: it returns a price quote first and buys only on a second, confirmed call. `wipe_phone` erases a Lusor Phone and asks you to confirm by typing its name. `remove_phone` removes one. Hermes is set to ask before every tool that changes something.
+- **Costs and changes.** `run_task` uses credits, and phone minutes on a Lusor Phone. With an API key, `add_phone` buys Lusor Phones on the workspace's plan: it returns a price quote first and buys only on a second, confirmed call. `wipe_phone` erases a Lusor Phone and asks you to confirm by typing its name. `remove_phone` removes one. Hermes is set to ask before every tool that changes something.
 
 ## Links
 
