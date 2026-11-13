@@ -1,0 +1,26 @@
+{
+  "name": "lusor",
+  "displayName": "Lusor",
+  "version": "1.0.0",
+  "description": "Put AI agents to work on real phones. Lusor connects your agent to your own iPhone or Android phone, or a Lusor Phone in the cloud: list your phones, run a task in plain language and get the result, answer the agent's questions, read the screen, tap, type and swipe, and install apps. Sign in with your Lusor account.",
+  "author": {
+    "name": "Lusor",
+    "email": "hello@lusor.ai",
+    "url": "https://lusor.ai"
+  },
+  "homepage": "https://docs.lusor.ai/connect/cursor",
+  "repository": "https://github.com/lusor-ai/plugins",
+  "license": "MIT",
+  "keywords": [
+    "lusor",
+    "lusor phone",
+    "lusor mcp",
+    "lusor agent"
+  ],
+  "logo": "assets/logo.svg",
+  "mcpServers": {
+    "lusor": {
+      "url": "https://mcp.lusor.ai/mcp"
+    }
+  }
+}

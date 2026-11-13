@@ -1,0 +1,18 @@
+{
+  "name": "lusor",
+  "owner": {
+    "name": "Lusor",
+    "email": "hello@lusor.ai"
+  },
+  "metadata": {
+    "description": "Lusor plugins: AI agents that use real phone apps.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "lusor",
+      "source": "./plugins/lusor",
+      "description": "AI agents that use real phone apps, on your own iPhone or Android or a Lusor Phone in the cloud."
+    }
+  ]
+}
