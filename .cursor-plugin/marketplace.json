@@ -12,7 +12,7 @@
     {
       "name": "lusor",
       "source": "./plugins/lusor",
-      "description": "AI agents that use real phone apps, on your own iPhone or Android or a Lusor Phone in the cloud."
+      "description": "AI agents that use real phone apps on your own iPhone or Android."
     }
   ]
 }

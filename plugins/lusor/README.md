@@ -1,6 +1,6 @@
 # Lusor
 
-Put AI agents to work on real phones. This plugin connects your agent to [Lusor](https://lusor.ai): your own iPhone or Android phone, or a Lusor Phone in the cloud.
+Put AI agents to work on real phones. This plugin connects your agent to [Lusor](https://lusor.ai) and your own iPhone or Android phone.
 
 Ask in plain language, for example *"List my Lusor phones"* or *"On my phone, open Settings and turn on dark mode, then tell me what changed."*
 
@@ -9,14 +9,14 @@ Ask in plain language, for example *"List my Lusor phones"* or *"On my phone, op
 | Tool | What it does |
 | --- | --- |
 | `list_phones`, `get_phone` | See your phones, whether each is online, and whether it is busy |
+| `connect_phone` | Show the steps to connect your own iPhone or Android, and report when it is connected |
 | `run_task`, `get_task`, `list_tasks` | Start an AI agent on a phone with a prompt, follow it, and read the result |
 | `reply_to_task`, `stop_task` | Answer the agent's question, or stop a task |
 | `get_screenshot`, `get_screen_state` | See the screen and its elements |
 | `phone_action` | Tap, type, swipe, press a button or open an app |
-| `install_app`, `list_app_installs` | Install apps from the Lusor app catalog on a Lusor Phone |
-| `remove_phone`, `wipe_phone` | Remove or wipe a Lusor Phone |
+| `install_app` | Install free apps from the App Store or Google Play on your phone |
 
-With an API key instead of sign-in, the agent also gets `add_phone`, which buys Lusor Phones after you confirm a price quote, and two advanced tools, `search` and `execute`, that reach any Lusor API operation.
+That is the whole set when you sign in. With an API key instead, the agent also gets tools for Lusor Phones in the cloud (`add_phone`, `remove_phone`, `wipe_phone`, and catalog installs with `install_app` and `list_app_installs`), and two advanced tools, `search` and `execute`, that reach any Lusor API operation.
 
 ## Install
 
@@ -53,7 +53,7 @@ Apps that let you set request headers can send `Authorization: Bearer lusor_...`
 - The plugin contains configuration only: no code, scripts or hooks.
 - It connects to one endpoint, `https://mcp.lusor.ai/mcp` (Streamable HTTP, OAuth 2.1 with dynamic client registration and PKCE). Sign-in runs on `https://mcp.lusor.ai`.
 - Every tool call runs as the signed-in user, in their workspace. Tool results, including screenshots and screen text, enter your session and so reach your model provider.
-- **Costs and changes.** `run_task` uses credits, and phone minutes on a Lusor Phone. With an API key, `add_phone` buys Lusor Phones on the workspace's plan: it returns a price quote first and buys only on a second, confirmed call. `wipe_phone` erases a Lusor Phone and asks you to confirm by typing its name. `remove_phone` removes one. Hermes is set to ask before every tool that changes something.
+- **Costs and changes.** `run_task` and `install_app` use credits. Installs are free apps only, and the agent stops and asks if a store wants a password, payment or verification. Hermes is set to ask before every tool that changes something.
 
 ## Links
 

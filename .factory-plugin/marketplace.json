@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "lusor",
-      "description": "AI agents that use real phone apps, on your own iPhone or Android or a Lusor Phone in the cloud.",
+      "description": "AI agents that use real phone apps on your own iPhone or Android.",
       "source": "./plugins/lusor",
       "category": "automation",
       "homepage": "https://docs.lusor.ai/connect"

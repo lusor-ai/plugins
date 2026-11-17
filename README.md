@@ -1,6 +1,6 @@
 # Lusor plugins
 
-Plugins that give AI agents real phones through [Lusor](https://lusor.ai): your own iPhone or Android phone, or a Lusor Phone in the cloud.
+Plugins that give AI agents your own iPhone or Android phone through [Lusor](https://lusor.ai).
 
 | Plugin | What it does |
 | --- | --- |

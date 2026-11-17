@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "lusor",
   "version": "1.0.0",
-  "description": "Put AI agents to work on real phones. Lusor connects your agent to your own iPhone or Android phone, or a Lusor Phone in the cloud: list your phones, run a task in plain language and get the result, answer the agent's questions, read the screen, tap, type and swipe, and install apps. Sign in with your Lusor account.",
+  "description": "Put AI agents to work on your own iPhone or Android phone. Run a task in plain language and get the result, answer the agent's questions, read the screen, tap, type and swipe, install free apps from the App Store or Google Play, and connect a new phone. Sign in with your Lusor account.",
   "author": {
     "name": "Lusor",
     "email": "hello@lusor.ai",
