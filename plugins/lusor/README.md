@@ -10,11 +10,11 @@ Ask in plain language, for example *"List my Lusor phones"* or *"On my phone, op
 | --- | --- |
 | `list_phones`, `get_phone` | See your phones, whether each is online, and whether it is busy |
 | `connect_phone` | Show the steps to connect your own iPhone or Android, and report when it is connected |
-| `run_task`, `get_task`, `list_tasks` | Start an AI agent on a phone with a prompt, follow it, and read the result |
+| `run_task`, `get_task`, `list_tasks` | Start an AI agent on a phone with a prompt, follow it, and read the result. To install a free app from the App Store or Google Play, ask for it in a task |
 | `reply_to_task`, `stop_task` | Answer the agent's question, or stop a task |
 | `get_screenshot`, `get_screen_state` | See the screen and its elements |
 | `phone_action` | Tap, type, swipe, press a button or open an app |
-| `install_app` | Install free apps from the App Store or Google Play on your phone |
+| `report_issue` | Report a bug or suggest a feature as a public issue in [lusor-ai/lusor](https://github.com/lusor-ai/lusor), or report an account problem as a private support ticket. Emails, phone numbers and codes are removed, and you see the exact text before anything is sent |
 
 That is the whole set when you sign in. With an API key instead, the agent also gets tools for Lusor Phones in the cloud (`add_phone`, `remove_phone`, `wipe_phone`, and catalog installs with `install_app` and `list_app_installs`), and two advanced tools, `search` and `execute`, that reach any Lusor API operation.
 
